@@ -16,3 +16,13 @@ It does use `shwi-js` as a dependency for getting random items out of a filtered
 For n > 5, it is incredibly slow, so I recommend sticking to n = 5 or lower. It's about $O(n^n)$ for both time and space, maybe even more.
 
 I don't know how to precisely calculate that yet, but when I put this logic into an AI and asked it about the time complexity it told me it's about $O(n^{n+2})$ for time and $O(n^{n+1})$ for space.
+
+## Usage
+
+Simply run `npm init` then `npm i` in the parent directory and then run this command:
+
+```cmd
+node hat_algorithm.js 3 genAlg
+```
+
+The `3` sets the number of hats (and persons), the `genAlg` tells the script which algorithm to use. `genAlg` is the one with the solution given by Going Null and works for any `n` (but gets incredibly slow incredibly fast.)
